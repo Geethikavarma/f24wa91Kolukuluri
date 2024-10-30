@@ -1,6 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
-const port = process.env.PORT || 3000;
+
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -33,9 +33,7 @@ app.use(function(req, res, next) {
 });
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
